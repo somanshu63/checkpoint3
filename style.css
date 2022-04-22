@@ -67,42 +67,37 @@ body{
 .flex-start{
     justify-content: flex-start;
 }
+.flex50{
+    width: 50%;
+}
+.flex31{
+    width: 31%;
+}
+.flex10{
+    width: 10%;
+}
 .center{
     align-items: center;
     text-align: center;
 }
 .container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 90px;
+    max-width: 1300px;
+    margin: 0;
+    padding: 0 130px;
 }
-.paddingLR200{
-    padding-left:  210px;
-    padding-right: 210px;
+.container2{
+    max-width: 1300px;
+    margin: 0;
+    padding: 100px 250px;
+}
+.container3{
+    max-width: 1300px;
+    margin: 0;
+    padding: 80px 250px;
 }
 .paddingLR250{
     padding-left:  250px;
     padding-right: 250px;
-}
-.paddingTB100{
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-.paddingTB80{
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-.paddingTB150{
-    padding-top: 150px;
-    padding-bottom: 150px;
-}
-.paddingTB200{
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
-.paddingTB50{
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 a{
     text-decoration: none;
@@ -159,11 +154,12 @@ p{
 
 
 /*header-navbar*/
-header{
+.header{
     background-color: var(--main-color);
     color: var(--third-color);
     font-size: xx-small;
-    padding: 12px 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 .header i{
     margin-right: 6px;
@@ -190,6 +186,9 @@ header{
     color: var(--main-color);
     font-weight: 500;
 }
+.brand a{
+    margin-left: 0;
+}
 .hero-navbar .btn-hero{
     margin-left: 50px;
     color: var(--third-color);
@@ -205,6 +204,9 @@ header{
     background-image: url(assets/media/hero/h1_hero.jpg);
     background-size: cover;
 }
+.hero h5{
+    padding-top: 40px;
+}
 .hero-heading h1{
     font-weight: 900;
     padding-top: 10px;
@@ -215,34 +217,32 @@ header{
     display: inline-block;
     margin-left: 0;
     padding: 15px 40px;
+    margin-bottom: 50px;
 }
 
 
 /*business planning*/
-.col1{
+.b-planning{
     background-color: var(--bg-color);
 }
-.col11{
-    width: 31.5%;
-}
-.col11 img{
+.b-plan img{
     width: 100%;
 }
-.col11 h4{
+.b-plan h4{
     margin: 20px 0;
 }
-.col13{
+.b-plan3{
     padding: 30px;
     background-color: var(--bg2-color);
     border: 3px solid var(--second-color);
 }
-.col13 hr{
+.b-plan3 hr{
     color: var(--second-color);
     width: 70px;
     margin: 20px 0;
     border: 2px solid var(--second-color);
 }
-.col13 a{
+.b-plan3 a{
     color: var(--main-color);
     margin-top: 20px;
     display: inline-block;
@@ -253,28 +253,28 @@ header{
 
 
 /*trusted clients*/
-.col21{
-    width: 50%;
+.we-trust{
+    margin: 50px 0;
 }
-.col2 img{
+.we-trust img{
     width: 450px;
     position: absolute;
 }
-.col22{
+.trust-article{
     padding: 30px;
     background-image: linear-gradient(to right, rgba(255,255,255,0.70), rgba(255,255,255,1));
     position: relative;
-    left: -60px;
+    left: -20px;
     top: 100px;
 }
-.col22 p{
+.trust-article p{
     margin: 30px 0;
 }
-.col22 a{
+.trust-article a{
     margin-top: 20px;
     display: inline-block;
 }
-.col22 h3{
+.trust-article h3{
     font-size: 26px;
 }
 
@@ -287,17 +287,17 @@ header{
     text-transform: capitalize;
     margin-bottom: 100px;
 }
-.col33{
+.services-home-article{
     margin-top: 20px;
-    width: 22%;
+    padding: 0 30px;
     text-align: center;
     justify-content: space-evenly;
 }
-.col33 i{
+.services-home-article i{
     color: var(--main-color);
     font-size: 35px;
 }
-.col33 h4{
+.services-home-article h4{
     margin: 20px 0;
 }
 .btn-section{
@@ -316,27 +316,33 @@ header{
     background-color: var(--bg-color);
     margin-top: 30px;
 }
-.col4{
+.comp-case {
     padding: 100px 0 100px 220px;
 }
-.col41{
+.comp-case-art{
     width: 39%;
     padding-right: 30px;
 }
-.col41 h3{
+.comp-case-art h3{
     margin-top: 50px;
     margin-bottom: 15px;
     font-weight: 800;
     font-size: 26px;
 }
-.col42{
+.comp-case-art a{
+    margin-top: 30px;
+}
+.com-case-fig{
     width: 58%;
+    overflow: hidden;
+    flex-wrap: nowrap;
 }
-.col42 img{
-    width: 47%;
-    height: 90%;
+.com-case-fig img{
+    width: 45%;
+    height: 350px;
+    margin-right: 10px;
 }
-.col4 .btn-section{
+.com-case-fig .btn-section{
     margin-top: 30px;
 }
 
@@ -347,25 +353,25 @@ header{
     margin-bottom: 30px;
     margin-top: 30px;
 }
-.col52 h6{
+.testi blockquote{
     color: var(--main-color);
     font-size: 18px;
     margin-bottom: 20px;
+    line-height: 1.5;
 }
-.col52 span{
+.testi strong{
     color: var(--main-color);
     text-transform: uppercase;
 }
-.col52 address{
+.testi address{
     color: var(--text-color);
     font-size: 12px;
 }
-.col51{
-    width: 10%;
+.arrow{
     padding-top: 160px;
     color: var(--text-color);
 }
-.col52{
+.testi{
     width: 60%;
     text-align: center;
 }
@@ -375,30 +381,30 @@ header{
 
 
 /*recent news*/
-.col6{
-    margin-top: 70px;
-}
-.col61{
-    width: 32%;
-    text-align: left;
-}
 .recent-news-home h2{
+    margin-bottom: 70px;
+    margin-top: -50px;
     font-size: 40px;
 }
-.col61 img{
+.rec-news{
+    text-align: left;
+    margin-bottom: 70px;
+}
+.rec-news img{
     width: 100%;
 }
-.col61 h5{
+.rec-news h5{
     text-transform: capitalize;
     margin: 20px;
 }
-.col61 p{
+.rec-news h4{
     color: var(--main-color);
     font-size: 15px;
-    margin: 20px 20px 0 20px;
+    margin: 20px 20px 10px 20px;
     text-transform: capitalize;
+    line-height: 1.5;
 }
-.col61 date{
+.rec-news date{
     font-size: 8px;
     color: var(--text-color);
     margin-left: 20px;
@@ -406,24 +412,27 @@ header{
 }
 
 /*request for call back*/
-.col7{
+.request-home{
     background: var(--main-color);
-    padding: 70px auto; 
-    margin-top: 100px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
-.col71{
-    width: 35%;
-}
-.col71 h2{
+.request-head h2{
     color: var(--bg-color);
-    font-size: 32px;
-    margin-bottom: 30px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1.5;
 }
-.col71 p{
+.request-head p{
     color: var(--third-color);
+    font-size: 12px;
+    line-height: 1.5;
 }
-.col72{
-    width: 55%;
+.request-form{
+    width: 57%;
+}
+::placeholder{
+    color: white;
 }
 .form-control{
     width: 48%;
@@ -440,55 +449,55 @@ header{
     width: 65%;
     color: var(--text-color);
 }
-.col72 a{
+.request-form a{
     padding: 18px 55px;
     margin-top: 16px;
 }
 
 
 /*footer*/
-.col81{
+.brand-links{
     width: 25%;
 }
-.col81 img{
+.brand-links img{
     width: 120px;
 }
-.col81 p{
+.brand-links p{
     margin: 30px 0;
 }
-.col82{
+.company-links{
     width: 12%;
     line-height: 1.5;
 }
-.col81 i{
+.brand-links i{
     font-size: 12px;
     color: black;
     margin-right: 12px;
 }
-.col8 h4{
+.footer h4{
     font-weight: 500;
     margin-bottom: 15px;
     font-size: 15px;
 }
-.col82 a{
+.company-links a{
     color: var(--text-color);
     margin-bottom: 12px;
     text-transform: capitalize;
 }
-.col83{
+.services-list{
     width: 25%;
     line-height: 1.9;
 }
-.col83 li{
+.services-list li{
     color: var(--text-color);
     font-size: 12px;
     text-transform: capitalize;
 }
-.col84{
+.get-in-touch{
     width: 20%;
     line-height: 1.8;
 }
-.col84 address{
+.get-in-touch address{
     color: var(--text-color);
     font-size: 12px;
     text-transform: capitalize;
@@ -519,7 +528,7 @@ small{
     background-size: cover;
 }
 .about-trust{
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 
@@ -547,11 +556,11 @@ small{
     color: var(--third-color);
     font-size: 34px;
 }
-.col9{
-    margin-bottom: -50px;
+.mark-stg{
+    margin-bottom: 50px;
     background-color: var(--bg-color);
 }
-.col91{
+.mrkg-strg{
     width: 32%;
     height: 300px;
     background-image: url(assets/media/cases/completed_case_1.jpg);
@@ -559,17 +568,17 @@ small{
     align-content: flex-end;
     margin-top: 15px;
 }
-.col911{
+.content{
     width: 80%;
     background-color: var(--bg2-color);
     padding: 20px;
     display: block;
 }
-.col911 h4{
+.content h4{
     font-size: 15px;
     padding-bottom: 10px;
 }
-.col911 p{
+.content p{
     font-size: 10px;
 }
 .col912{
@@ -599,78 +608,66 @@ small{
     color: var(--third-color);
     font-size: 34px;
 }
-.col101{
+.blog-article{
     width: 65%;
 }
-.col102{
-    width: 31%;
-}
-.col1011{
+.blg-artcls{
     box-shadow: 2px 2px 2px 2px #f8f8f8;
-}
-.col1011 img{
-    width: 100%;
     position: relative;
 }
-.col1011 .date{
+.blg-artcls img{
+    width: 100%;
+}
+.blg-artcls date{
     position: absolute;
-    bottom: 0px;
-    left: 280px;
-    padding: 15px 20px;
+    bottom: 160px;
+    left: 30px;
+    padding: 10px 10px;
     border-radius: 5px;
     background-color: var(--second-color);
     color: var(--bg2-color);
+    line-height: 1.5;
+    font-size: small;
+    text-align: center;
 }
-.date .day{
+.blg-artcls date span{
     font-size: x-large;
 }
-.date .month{
-    font-size: small;
-}
-.col1011 h4{
+.blg-artcls h4{
     padding: 40px 0 20px 20px;
 }
-.col1011 p{
+.blg-artcls p{
     padding: 0 40px 20px 20px;
     font-size: 10px;
     line-height: 2;
 }
-.col1011 i{
+.blg-artcls i{
     margin-right: 10px;
 }
-.col1011 span{
+.blg-artcls span{
     margin: 0 10px;
 }
-.col1012{
+.blog-2{
     position: relative;
     top: 40px;
 }
-.col1013{
+.blog-3{
     position: relative;
     top: 80px;
 }
-.col1014{
+.blog-4{
     position: relative;
     top: 120px;
 }
-.col1015{
+.blog-5{
     position: relative;
     top: 160px;
 }
-.col1015 .date, .col1014 .date, .col1013 .date, .col1012 .date{
-    position: absolute;
-    bottom: 165px;
-    left: 30px;
-    padding: 15px 20px;
-    border-radius: 5px;
-    background-color: var(--second-color);
-    color: var(--bg2-color);
-}
-.col101 .page-number{
+.blog-article .page-number{
     margin-left: 40%;
     margin-bottom: 100px;
 }
-.col101 a{
+.blog-article a{
     position: relative;
     top: 220px;
     font-size: 12px;
@@ -679,21 +676,24 @@ small{
     border: 0.5px solid #F5EFFE;
     margin-right: 10px;
 }
-.col101 i{
+.blog-article i{
     color: var(--text-color);
 }
-.col1021 .form-control-blog{
+.form-aside .form-control-blog{
     width: 85%;
     padding: 5px 20px;
     border: 1px solid #F5EFFE;
 }
-.col1021 .blog-btn{
+.form-aside .blog-btn{
     width: 15%;
     padding: 5px 8px;
     border-radius: 0;
     vertical-align: middle;
     font-size: 12px;
     line-height: 18px;
+}
+.newsletter ::placeholder, .form-aside ::placeholder{
+    color: var(--text-color);
 }
 .blog-btn2{
     width: 100%;
@@ -702,53 +702,54 @@ small{
     border-radius: 0;
     margin-top: 8px;
 }
-.col1022 li{
+.category li{
     font-size: 12px;
     text-transform: capitalize;
     color: var(--main-color);
 }
-.col1022 li hr{
+.category li hr{
     margin: 10px 0;
     border: 1px solid #F0E9FE;
 }
-.col1022 hr, .col1023 hr, .col1024 hr, .col1025 hr, .col1026 hr{
+.category hr, .recent-post hr, .tag-clouds hr, .insta-feed hr, .newsletter hr{
     border: 1px solid #F0E9FE;
 }
-.col10231 img{
+.recent-post-articles img{
     width: 28%;
-    height: 60px;
+    height: 55px;
 }
-.col102311{
+.RPA-data{
     width: 68%;
 }
-.col1023, .col1024, .col1022, .col1020, .col1025, .col1026{
+.recent-post, .tag-clouds, .category, .form-aside, .insta-feed, .newsletter{
     margin-top: 20px;
     padding: 20px;
     background-color: #FBF9FF;
 }
-.col1020{
+.form-aside{
     margin-top: 0;
 }
-.col10231{
+.recent-post-articles{
     margin-bottom: 20px;
 }
-.col1023 h4, .col1022 h4, .col1024 h4, .col1025 h4, .col1026 h4{
+.recent-post h4, .category h4, .tag-clouds h4, .insta-feed h4, .newsletter h4{
     font-size: 15px;
     font-weight: 500;
     margin-bottom: 30px;
 }
-.col102311 p{
+.RPA-data h4{
     padding-top: 10px;
+    margin-bottom: 5px;
     font-size: 11px;
     font-weight: 600;
     color: var(--main-color);
 }
-.col102311 date{
+.RPA-data date{
     font-size: 9px;
     color: var(--main-color);
     text-transform: capitalize;
 }
-.col1024 li{
+.tag-clouds li{
     font-size: 8px;
     background-color: var(--bg2-color);
     color: var(--main-color);
@@ -757,7 +758,7 @@ small{
     margin-bottom: 5px;
     margin-right: 5px;
 }
-.col10251 img{
+.insta-images img{
     width: 30%;
     margin-bottom: 10px;
 }
@@ -784,6 +785,9 @@ small{
     color: var(--third-color);
     font-size: 34px;
 }
+.contact-page ::placeholder{
+    color: var(--text-color);
+}
 .contact-page iframe{
     width: 100%;
     height: 300px;
@@ -791,31 +795,31 @@ small{
 .contact-page h4{
     margin: 40px 0 15px 0;
 }
-.col1111{
+.contact-page-form{
     width: 65%;
 }
-.col1112{
+.details{
     width: 23%;
 }
-.col1111 .form-control-blog2{
+.contact-page-form .form-control-blog2{
     margin-bottom: 20px;
     box-shadow: 0 1px #f5effe;
 }
-.col11111 .form-control-blog2{
+.form-line1 .form-control-blog2{
     width: 48%;
 }
-.col1111 .blog-btn2{
+.contact-page-form .blog-btn2{
     width: 18%;
 }
-.col1112 .icon{
+.details .icon{
     width: 15%;
     color: #929292;
 }
-.col11121{
+.details-contact{
     width: 84%;
     margin-bottom: 30px;
 }
-.col11121 .address-head{
+.details-contact .address-head{
     font-size: 13px;
     text-transform: capitalize;
     font-weight: 500;
@@ -823,7 +827,7 @@ small{
     color: #414141;
     letter-spacing: -1px;
 }
-.col11121 .address-bot{
+.details-contact .address-bot{
     font-size: 12px;
     text-transform: capitalize;
     font-weight: 500;
